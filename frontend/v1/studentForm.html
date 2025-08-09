@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            InTrack
+        </title>
+
+        <link rel="stylesheet" href="./studentForm.css">
+    </head>
+
+    <body>
+        <div id="navigationBar">
+
+        </div>
+
+        <section id="formBox">
+            <h3><center>STUDENT INTERNSHIP DETAILS FORM</center></h3>
+
+            <br>
+
+            <form id="registrationForm">
+                <input type="number" id="regNo" placeholder="Register Number" title="Enter your Register Number" disabled required>
+                
+                <input type="text" id="studentName" placeholder="Full Name" title="Enter your Full Name" disabled required>
+                
+                <input type="tel" id="phoneNo" placeholder="Phone Number" title="Enter your Phone Number" required>
+                
+                <select id="section" name="section" title="Select your Section" required>
+                    <option value="" disabled selected>Section</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+
+                <select id="obtainedInternship" name="obtainedInternship" title="Select your Choice" onchange="toggleInputFields()" required>
+                    <option value="" disabled selected>Obtained Internship?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <input type="text" id="title" placeholder="Title (e.g., Software Developer Intern)" title="Enter your Role" disabled required>
+
+                <input type="text" id="period" placeholder="Period (e.g., 2 months)" disabled required>
+                
+                <input type="text" id="startDate" name="startDate" disabled required 
+                onfocus="(this.type='date')" onblur="if(!this.value) this.type='text';" 
+                placeholder="Start Date">
+                
+                <input type="text" id="endDate" name="endDate" disabled required 
+                onfocus="(this.type='date')" onblur="if(!this.value) this.type='text';" 
+                placeholder="End Date">
+                
+                <input type="text" id="companyName" placeholder="Company Name" disabled required>
+
+                <select id="placementSource" disabled required>
+                    <option value="" disabled selected>Placement Source</option>
+                    <option value="Through College">Through College</option>
+                    <option value="Off-Campus">Off-Campus</option>
+                </select>
+
+                <input type="number" id="stipend" placeholder="Stipend (In Rs.)" disabled required>
+
+                <select id="internshipType" disabled required>
+                    <option value="" disabled selected>Internship Type</option>
+                    <option value="Industrial">Industrial</option>
+                    <option value="Research">Research</option>
+                </select>
+
+                <select id="location" disabled required>
+                    <option value="" disabled selected>Abroad / India</option>
+                    <option value="India">India</option>
+                    <option value="Abroad">Abroad</option>
+                </select>
+
+                <input type="checkbox" id="permissionLetter" name="permissionLetter" value="Permission Letter" disabled>
+                <label for="permissionLetter"> Signed Permission Letter, Offer Letter Submitted</label><br>
+                
+                <input type="checkbox" id="completionCertificate" name="completionCertificate" value="Completion Certificate" disabled>
+                <label for="completionCertificate"> Completion Certificate Submitted</label><br>
+                
+                <input type="checkbox" id="internshipReport" name="internshipReport" value="Internship Report" disabled>
+                <label for="internshipReport"> Internship Report Submitted</label><br>
+                
+                <input type="checkbox" id="studentFeedback" name="studentFeedback" value="Student Feedback" disabled>
+                <label for="studentFeedback"> Student Feedback Submitted</label><br>
+                
+                <input type="checkbox" id="employerFeedback" name="employerFeedback" value="Employer Feedback" disabled>
+                <label for="employerFeedback"> Employer Feedback Submitted</label><br>              
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <script src="studentForm.js"></script>
+    </body>
+</html>

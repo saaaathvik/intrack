@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+}
+
+#body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgba(159, 148, 233, 1);
+}
+
+#displayBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 30px;
+  width: 90%;
+  max-width: 90%;
+  min-width: 300px;
+}
+
+#tableContainer {
+  max-height: 700px;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  display: block;
+  border: none;
+  margin-top: 20px;
+}
+
+#dataTable {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background-color: rgb(238, 174, 218);
+  z-index: 1;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid black;
+}
+
+th {
+  background-color: rgb(238, 174, 218);
+  color: white;
+  border-top: none;
+}

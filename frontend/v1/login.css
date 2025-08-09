@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+}
+
+#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(238,174,218);
+    background: radial-gradient(circle, rgba(238,174,218,1) 0%, rgba(159,148,233,1) 55%);
+}
+
+#loginBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 300px;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#loginTypeSelection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px 0 15px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.loginTypeButton {
+    flex: 1;
+    padding: 15px 5px;
+    margin: 0 0px 15px;
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    overflow: hidden;
+}
+
+.loginTypeButton:hover {
+    background-color: lightgreen;
+}
+
+.loginTypeButton:active {
+    background-color: lightgreen;
+}
+
+.loginTypeButton.selected {
+    background-color: lightgreen;
+}
+
+#loginPage {
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#loginButton {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+    width: 90%;
+    border: 1px solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+#loginButton:hover {
+    background-color: lightgreen;
+}
+
+#forgotPassword {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+#forgotPassword:hover {
+    text-decoration: underline;
+}
